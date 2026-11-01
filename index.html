@@ -38,8 +38,7 @@ table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:6px 4px;b
 <div id="app"></div><div id="toast" role="status"></div>
 <script>
 // غيّر العنوان ده برابط الـ Webhook بتاع n8n (Production URL)
-const API_URL='https://https://primary-production-8e4d1.up.railway.app/webhook/installments-api/webhook/installments-api';
-
+const API_URL='https://primary-production-8e4d1.up.railway.app/webhook/installments-api';
 const app=document.getElementById('app');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const money=n=>Number(n||0).toLocaleString('en-US',{maximumFractionDigits:2});
